@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-insta{
+    display: flex;
+    height: 100vh;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+.centro-insta{ 
+    display: grid;
+    width: 100vh;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.centro-insta .cadastro-principal { 
+    display: grid;
+    padding: 3rem;
+    gap: 1rem;
+}
+.centro-insta .cadastro-principal h1{ 
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
