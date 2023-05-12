@@ -5,28 +5,120 @@
 }
 .main-insta{
     display: flex;
-    height: 100vh;
-    max-width: 1200px;
+    height: 80vh;
+    max-width: 2500;
     justify-content: center;
     align-items: center;
 }
 .centro-insta{ 
     display: grid;
-    width: 100vh;
-    height: 100vh;
+    width:auto;
+    height: 80vh;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
 }
 .centro-insta .cadastro-principal { 
-    display: grid;
-    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
+    height: 402px;
+    width: 350px;
+
 }
 .centro-insta .cadastro-principal h1{ 
     display: flex;
-    padding: 1rem;
-    align-items: center;
+    align-items:center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 40px;
 }
+.centro-insta .cadastro-secundario { 
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    width: 350px;
+    justify-content: center;
+}
+.centro-insta .cadastro-secundario a { 
+    color: initial;
+    text-decoration: none;
+    color: blue;
+}
+.obtenha-o-aplicativo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.obtenha-o-aplicativo p{
+    font-size: 15px;
+}
+.entrar-face{
+    color: blue;
+}
+.cadastro-principal img{
+    transform: scale(60%);
+}
+.cadastro-principal a{
+ text-decoration: none;
+ color: initial;
+ color: blue;
+ font-size: 15px;
+ margin-right: 30px;
+}
+.botao{
+    display: flex;
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+    background-color:rgb(90, 182, 243) ;
+    color: white;
+    font-size: 14px;
+    font-weight:400;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.input-text{
+    background-color: aliceblue;
+    height: 20px;
+    width: 250px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 1rem;
+}
+.rodape{
+    display: flex;
+    max-width: 2500px;
+    margin-left: 5rem;
+    height: 138px;
+}
+.primeira-linha{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.segunda-linha{
+    display: flex;
+    gap: 1rem;
+    flex-flow: row wrap;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    justify-content: center;
+}
+
