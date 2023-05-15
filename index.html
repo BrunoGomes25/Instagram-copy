@@ -1,139 +1,80 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.main-insta{
-    display: flex;
-    height: 80vh;
-    max-width: 2500;
-    justify-content: center;
-    align-items: center;
-}
-.centro-insta{ 
-    display: grid;
-    width:auto;
-    height: 80vh;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-}
-.centro-insta .cadastro-principal { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    height: 402px;
-    width: 350px;
-    border: rgb(219, 219, 219) 1px solid;
-
-}
-.centro-insta .cadastro-principal h1{ 
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    font-size: 40px;
-}
-.centro-insta .cadastro-secundario { 
-    display: flex;
-    padding: 1rem;
-    gap: 1rem;
-    width: 350px;
-    justify-content: center;
-    border: rgb(219, 219, 219) 1px solid;
-}
-.centro-insta .cadastro-secundario a { 
-    color: initial;
-    text-decoration: none;
-    color: blue;
-}
-.obtenha-o-aplicativo{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-.obtenha-o-aplicativo p{
-    font-size: 15px;
-}
-.entrar-face{
-    color: blue;
-}
-
-.cadastro-principal a{
- text-decoration: none;
- color: initial;
- color: blue;
- font-size: 15px;
- margin-right: 30px;
-}
-.botao{
-    display: flex;
-    width: 250px;
-    height: 20px;
-    border-radius: 5px;
-    background-color:rgb(90, 182, 243) ;
-    color: white;
-    font-size: 14px;
-    font-weight:400;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-    border: rgb(219, 219, 219) 1px solid;
-}
-.input-text{
-    background-color: rgb(250, 250, 250);
-    height: 20px;
-    width: 250px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    padding: 1rem;
-    border: rgb(219, 219, 219) 1px solid;
-}
-.rodape{
-    display: flex;
-    max-width: 2500px;
-    margin-left: 5rem;
-    height: 138px;
-}
-.primeira-linha{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    text-decoration: none;
-    text-transform: none;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-}
-.segunda-linha{
-    display: flex;
-    gap: 1rem;
-    flex-flow: row wrap;
-    text-decoration: none;
-    text-transform: none;
-    list-style: none;
-    justify-content: center;
-}
-.conteudo-imagem{
-    position: absolute;
-    left: 7.9rem;
-    top: 5rem;
-    transform: scale(107%);
-}
-.conteudo-fora{
-    position: absolute;
-    left: 1rem;
-    top: 1.2rem;
-}
-.img-celular{
-position: relative;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="IMG/Instagram-Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/InstagramCopy/CSS/styles.css">
+</head>
+<body>
+    <main class="main-insta">
+        <article class="centro-insta">
+            <div class="celulares">
+                <div class="img-celular">
+                   <img src="/InstagramCopy/IMG/insta celular.jpg" alt="">
+                   <img class="conteudo-imagem" src="IMG/conteudocelular.jpg" alt="">
+                   <img class="conteudo-fora" src="IMG/parte de fora celular.jpg" alt="">
+                </div>  
+            </div>
+            <div class="login">
+                <div class="cadastro">
+                    
+                    <fieldset class="cadastro-principal" >
+                        <img src="IMG/insta-removebg-preview.png" alt="">
+                        <input class="input-text" type="text" name="email" id="email" placeholder="nome, telefone ou email">
+                        <input class="input-text" type="text" name="senha" id="senha" placeholder="senha">
+                        <button class="botao" type="submit">Entrar</button>
+                        <p class="traço"> ------------------  ou ------------------</p>
+                        <h3 class="entrar-face"> <img src="IMG/facebookfabicon.png" alt=""> <a href="">Entrar com o FaceBook</a></h3>
+                        <p class="esqueceu-senha">esqueceu a senha?</p> 
+                    </fieldset>
+                    <br>
+                    
+                </div>
+                <div class="nao-tenho-conta">
+                    <fieldset class="cadastro-secundario">
+                        <p>nao tem uma conta? <a href="#">cadastre-se</a> </p>
+                    </fieldset>
+                </div>
+                <div class="obtenha-o-aplicativo">
+                    <p>obtenha o aplicativo</p>
+                    <div>
+                        <img src="IMG/googleplay.jpg" alt="">
+                        <img src="IMG/microsoft.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+     
+        </article>
+    </main>
+    <footer class="rodape">
+        <div class="primeira-linha">   
+            <div class="primeira-linha">
+                <ul class="primeira-linha">
+                <li>Meta</li>
+                <li>Sobre</li>
+                <li>Blog</li>
+                <li>Carreiras</li>
+                <li>Ajuda</li>
+                <li>API</li>
+                <li>Privacidade</li>
+                <li>Termos</li>
+                <li>Principais contas</li>
+                <li>Locaçizações</li>
+                <li>Instagram Lite</li>
+                <li>Carregamento de contatos e não usuarios</li>
+                <li>Meta Veridied</li>
+            </ul></div>    
+            
+                <div class="segunda-linha">
+                    <ul class="segunda-linha">
+                        <li>Portugues(brasil)</li>
+                        <li>º 2023 Instagram from Meta</li>
+                    </ul>
+                </div>
+        </div>
+    </footer>
+</body>
+</html>
